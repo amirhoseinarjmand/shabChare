@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Byekan;
+    src: url(../font/Byekan.ttf) format("truetype"),
+        url(../font/Byekan.woff) format("woff");
+}
+
+@font-face {
+    font-family: lalezar;
+    src: url(../font/lalezar.ttf) format("truetype"),
+        url(../font/lalezar.woff) format("woff");
+}
+
+.consultation {
+    margin: 5.5rem auto;
+    padding: 10px;
+    padding-top: 0;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .18);
+}
+
+.consultation-title {
+    background-color: #ff5f08;
+    padding: 5px 15px;
+    display: inline-block;
+    font-family: lalezar;
+    font-size: 26px;
+    border-radius: 0 0 15px 15px;
+}
+
+.consultation-box-container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(236px,1fr));
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.consultation-box {
+    width: 238px;
+    cursor: pointer;
+}
+
+.consultation-box:hover .consultation-img {
+    opacity: 0.5;
+}
+
+
+.consultation-box:hover .img-caption {
+    color: rgb(200, 23, 23);
+}
+
+
+.consultation-img {
+    width: 236px;
+    height: 160px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.img-caption {
+    font-family: Byekan;
+    text-align: center;
+    font-size: 17px;
+    padding: 7px;
+}
+
+@media only screen and ( max-width: 1330px) {
+    .consultation-box4 {
+        grid-column: 2/3;
+    }
+}
+
+@media only screen and ( max-width: 667px) {
+    .consultation-box4 {
+        grid-column: auto;
+    }
+}

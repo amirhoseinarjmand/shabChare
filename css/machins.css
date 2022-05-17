@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Byekan;
+    src: url(../font/Byekan.ttf) format("truetype"),
+        url(../font/Byekan.woff) format("woff");
+}
+
+.machins {
+    margin-top: 7rem;
+}
+
+.machins-box-container {
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.machins-title {
+    font-family: Byekan;
+    font-size: 34px;
+    text-align: center;
+}
+
+.machins-title::after,
+.machins-title::before {
+    content: "";
+    margin: 0 7px;
+    background-color: rgb(200, 23, 23);
+    width: 20%;
+    height: 2px;
+    display: inline-block;
+}
+
+.machins-box {
+    background-color: #9E9E9E;
+    width: 247px;
+    height: 300px;
+}
+
+.machins-image {
+    opacity: 0.4;
+    width: 247px;
+    height: 300px;
+    transition:all ease-out 0.7s;
+    transform: scale(1.01)
+}
+
+.machins-image:hover {
+    opacity: 1;
+    transform: scale(1.09)
+}
+
+@media only screen and (max-width: 739px) {
+    .machins-title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .machins-title {
+        font-size: 15px;
+    }
+}

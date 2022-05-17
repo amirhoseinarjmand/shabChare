@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Byekan;
+    src: url(../font/Byekan.ttf) format("truetype"),
+        url(../font/Byekan.woff) format("woff");
+}
+
+@font-face {
+    font-family: Broya;
+    src: url(../font/BRoya/BRoya.ttf) format("truetype"),
+        url(../font/BRoya/BRoya.woff) format("woff");
+}
+
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    direction: rtl;
+}
+
+.footer-top {
+    background-color: #3a5462;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1f;
+    padding: 3rem;
+    padding-bottom: 0;
+    grid-column-gap: 1.8rem;
+}
+
+.footer-text {
+    padding: 0.5rem;
+}
+
+.footer-text-title {
+    font-family: Byekan;
+    color: #8ab661;
+    margin-bottom: 15px;
+}
+
+.footer-text h5 {
+    direction: rtl;
+    font-family: Broya;
+    color: #fff;
+    margin-bottom: 0.6rem;
+    font-size: 16px;
+}
+
+.footer-text-box1 h5:hover {
+    color: #ff5f08;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 930px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+}

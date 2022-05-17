@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Byekan;
+    src: url(../font/Byekan.ttf) format("truetype"),
+        url(../font/Byekan.woff) format("woff");
+}
+
+
+.header-top {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header-bottom {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #eceff1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: 0.95;
+}
+
+.menu-responsive {
+    display: none;
+    margin: 15px 0;
+    border: 1px solid  rgba(116, 110, 110, 0.442);
+    padding: 6px;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    padding: 15px 0;
+}
+
+.menu {
+    font-family: Byekan;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: #B71C1C;
+}
+
+.logo-img {
+    width: 45px;
+}
+
+@media only screen and ( max-width: 935px) {
+    .menu {
+        font-size: 11px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and ( max-width: 800px) {
+    .menu {
+        font-size: 9px;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and ( max-width: 590px) {
+    .header-menu {
+        display: none;
+    }
+    .menu-responsive {
+        display: inline-block;
+    }
+}

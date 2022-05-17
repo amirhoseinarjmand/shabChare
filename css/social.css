@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.social {
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(116, 110, 110, 0.442);
+    border-bottom: 1px solid rgba(116, 110, 110, 0.442);
+}
+
+.header-social {
+    list-style-type: none;
+    display: flex;
+    margin-left: 100px;
+}
+
+.social-list {
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    border-right: 1px solid rgba(116, 110, 110, 0.442);
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    left: -50%;
+    top: 120%;
+    padding: 2px 5px;
+    border-radius: 10px;
+    z-index: 3;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.telegram {
+    border-left: 1px solid rgba(116, 110, 110, 0.442);
+}
+
+.telegram:hover {
+    background-color: #29B6F6;
+    color: #fff;
+}
+
+.telegram:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+    color: #fff;
+}
+
+.twitter:hover {
+    background-color: #80DEEA;
+    color: #fff;
+}
+
+.twitter:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+    color: #fff;
+}
+
+.facebook:hover {
+    background-color: #303F9F;
+    color: #fff;
+}
+
+.facebook:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+    color: #fff;
+}
+
+.gplus:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.gplus:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+    color: #fff;
+}
+
+.linkedin:hover {
+    background-color: #1E88E5;
+    color: #fff;
+}
+
+.linkedin:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+    color: #fff;
+}
+
+.instagram:hover {
+    background-color: #E91E63;
+    color: #fff;
+}
+
+.instagram:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and ( max-width: 590px) {
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    .header-social {
+        margin: 0;
+    }
+}
